@@ -1,7 +1,7 @@
+DROP TABLE IF EXISTS Campaign; 
 DROP TABLE IF EXISTS Contacts;
 DROP TABLE IF EXISTS Category;
 DROP TABLE IF EXISTS Subcategory;
-DROP TABLE IF EXISTS Campaign; 
 
 CREATE TABLE Contacts(
 	contact_id int NOT NULL,
@@ -36,8 +36,6 @@ CREATE TABLE Campaign(
 	currency VARCHAR(3),
 	launched_date date,
 	end_date date,
-	category VARCHAR(30) NOT NULL,
-	subcategory VARCHAR(30) NOT NULL,
 	category_id VARCHAR(6) NOT NULL,
 	subcategory_id VARCHAR(9) NOT NULL,
 	PRIMARY KEY(cf_id),
